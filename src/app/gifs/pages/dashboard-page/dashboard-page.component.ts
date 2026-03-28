@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { GifsSideMenuComponent } from '../../components/gifs-side-menu.component/gifs-side-menu.component';
+import { GifsSideMenuComponent } from '../../components/gifs-side-menu-header/gifs-side-menu.component/gifs-side-menu.component';
 
 @Component({
-  selector: 'app-dashboard-page',
+  selector: 'dashboard-page',
   standalone: true,
   imports: [RouterOutlet, GifsSideMenuComponent],
   templateUrl: './dashboard-page.component.html',
