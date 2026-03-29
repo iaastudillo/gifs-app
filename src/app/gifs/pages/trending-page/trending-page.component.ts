@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GifsListComponent } from '../../components/gifs-list.component/gifs-list.component';
+import { GifsListComponent } from '../../components/gifs-list/gifs-list.component';
 
 //Enviar las imangenes al component list item. Enviar el array de imagenes con input a la lista y luego al item
 

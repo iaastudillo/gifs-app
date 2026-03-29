@@ -9,7 +9,7 @@ interface MenuOption {
 }
 
 @Component({
-  selector: 'gifs-side-menu-options',
+  selector: 'side-menu-options',
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './side-menu-options.component.html',

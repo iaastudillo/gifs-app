@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { GifsSideMenuOptions } from './side-menu-options/side-menu-options.component';
 import { GifsSideMenuHeaderComponent } from './side-menu-header/side-menu-header.component';
+import { GifsSideMenuOptions } from './side-menu-options/side-menu-options.component';
 
 @Component({
-  selector: 'gifs-side-menu',
+  selector: 'side-menu',
   standalone: true,
   imports: [GifsSideMenuHeaderComponent, GifsSideMenuOptions],
   templateUrl: './side-menu.component.html',

@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 
 @Component({
-  selector: 'gif-list-item',
+  selector: 'list-item',
   standalone: true,
   imports: [],
   templateUrl: './gif-list-item.component.html',
