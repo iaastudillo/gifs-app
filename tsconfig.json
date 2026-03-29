@@ -5,9 +5,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      /*"@gifs/*": ["src/app/gifs/*"],
-      "@shared/*": ["src/app/shared/*"],
-      "@core/*": ["src/app/core/*"],*/
+      //Esto se usa para evitar usar rutas relativas como ../../../ en los imports, y en su lugar usar rutas absolutas como @gifs/ o @shared/
+      "@gifs/*": ["src/app/gifs/*"],
       "@environments/*": ["src/environments/*"]
     },
     "strict": true,

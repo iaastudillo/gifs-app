@@ -12,7 +12,7 @@ interface MenuOption {
   selector: 'gifs-side-menu-options',
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
-  templateUrl: './gifs-side-menu-options.component.html',
+  templateUrl: './side-menu-options.component.html',
 })
 export class GifsSideMenuOptions {
   menuOptions: MenuOption[] = [

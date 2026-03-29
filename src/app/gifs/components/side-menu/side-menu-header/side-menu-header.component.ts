@@ -6,7 +6,7 @@ import { environment } from '@environments/environment';
   selector: 'gifs-side-menu-header',
   standalone: true,
   imports: [],
-  templateUrl: './gifs-side-menu-header.component.html',
+  templateUrl: './side-menu-header.component.html',
 })
 export class GifsSideMenuHeaderComponent {
   envs = environment;
