@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { GifsListComponent } from '../../components/gifs-list/gifs-list.component';
 import { GifsServiceTs } from '@gifs/services/gifs.service';
 
@@ -11,7 +11,7 @@ import { GifsServiceTs } from '@gifs/services/gifs.service';
   templateUrl: './trending-page.component.html',
 })
 export default class TrendingPageComponent {
-  imageUrls: string[] = [
+  /*: string[] = [
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
@@ -24,11 +24,13 @@ export default class TrendingPageComponent {
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg',
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg',
     'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg',
-  ];
+  ];*/
 
-  gidService = inject(GifsServiceTs);
+  gifService = inject(GifsServiceTs);
 
-  constructor() {
-    this.gidService.loadTrendingGifs();
-  }
+  imageUrls = computed(() => this.gifService.trendingGifs().map((gif) => gif.url));
+
+  //constructor() {
+  //  this.gidService.loadTrendingGifs();
+  //}
 }
