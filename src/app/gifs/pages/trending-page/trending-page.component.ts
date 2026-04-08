@@ -28,7 +28,7 @@ export default class TrendingPageComponent {
 
   gifService = inject(GifsServiceTs);
 
-  imageUrls = computed(() => this.gifService.trendingGifs().map((gif) => gif.url));
+  trendingGifs = computed(() => this.gifService.trendingGifs());
 
   //constructor() {
   //  this.gidService.loadTrendingGifs();
